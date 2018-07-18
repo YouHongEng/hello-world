@@ -28,6 +28,8 @@ THE SOFTWARE.
 #include <errno.h> // error output
 #include <stdint.h> // uint_t definitions
 #include <stdbool.h> // bool type
+//#include <iostream>
+
 
 // include library
 #include "lib.h"
@@ -35,6 +37,8 @@ THE SOFTWARE.
 // function prototypes
 void setup(void);
 void loop(void);
+
+//using namespace std;
 
 int main(){ 
 	setup();
@@ -45,11 +49,17 @@ int main(){
 
 void setup(void){
 	// put your setup code here, to run once:
-	printf("%s \n", "Hello World, You Hong here");
+	printf("%s \n", "Hello World!");
 }
 
 void loop(void){
 	// put your main code here, to run repeatedly:
 	// remove exit 0
+	for(int i = 0;i<10;i++)
+	{
+		printf("%s %d\n", "Hello World!",i);
+	}
+
+
 	exit (0);
 }
